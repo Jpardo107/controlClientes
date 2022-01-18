@@ -22,6 +22,7 @@ import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.componen
 import { clienteServicio } from './servicios/cliente.service';
 import { LoginService } from './servicios/login.service';
 import { AuthGuard } from './guardianes/auth.guard';
+import { ConfiguracionServicio } from './servicios/configuracion.service';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { AuthGuard } from './guardianes/auth.guard';
     FormsModule,
     FlashMessagesModule.forRoot()
   ],
-  providers: [clienteServicio, LoginService, AuthGuard],
+  providers: [clienteServicio, LoginService, AuthGuard, ConfiguracionServicio],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
